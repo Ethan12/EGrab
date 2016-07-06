@@ -1,0 +1,1064 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060CC9D5DE30F0C8764569E4793E7DE6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D46091C62608F46C0E051A6072E98F /* AppKit.framework */; };
+		09C54D827051B15CFE1DE40025B3800E /* MASLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B04A67C789926A89191AD98A55BB7B1 /* MASLocalization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1342936E1B2ED51F60A7802EDD60BECE /* Pods-EGrabTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 461B946B4D3C631D2C714124E38B1935 /* Pods-EGrabTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EFA842F25DB0842363729B64A41D21A /* MASShortcutBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1C76E4F64D8120778CF1537599A6C /* MASShortcutBinder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		210062E63EDD796FD512D97EB99669EB /* MASShortcutValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = D36C66829F7307E458032CB7B7524999 /* MASShortcutValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		263AFBA332EC1C34AD3D8464D8BB88CB /* MASShortcut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F15B2E0FAA9BE5405E9909DD9374BF6 /* MASShortcut-dummy.m */; };
+		29E5D3E4AE55FDAF4EA50119FE10EA7B /* Pods-EGrabUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB50FB5CCFB9E37A3CCB15DEC3DC4AD /* Pods-EGrabUITests-dummy.m */; };
+		2A4047DF4BF395701C8F7D0461043353 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABA69F0221C659DB9B227618EF7F342 /* Cocoa.framework */; };
+		2A4771642D5B18A806022FEF4FE3D506 /* Pods-EGrabTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D0E48BF95784BF69E9C9F69A023AF1 /* Pods-EGrabTests-dummy.m */; };
+		2F9E42A596D0FE020A233186518259A4 /* Pods-EGrabUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E41A3312B26D5E9902C7B70B6E7B4C /* Pods-EGrabUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FEF37741CA12D82F5AC920659EB1BCE /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3600272BDC3AA29FC1DB368D3EF5C258 /* ja.lproj */; };
+		339D41F1E59D212C2A66A761B6A99D79 /* MASShortcutMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF0CF217FC90C8A3D237CF57D8A99EA /* MASShortcutMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		358812FEC60475F49345C8F7D07CE61E /* MASHotKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 263B72F86696416E3B86AE27853A4AB1 /* MASHotKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3635E70D36BD0089FDCABC1556816AAF /* Pods-EGrab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1321375CCC0132523443A60EA2132 /* Pods-EGrab-dummy.m */; };
+		438355D74FE0EAD9C90317C8413FEFB1 /* MASLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = AE298D8AA4C642219CB48D173B218185 /* MASLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AB651AF882D7114711D54EFC73122D9 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B5E80260461A254F00550C078D94F3AB /* it.lproj */; };
+		52D4D9AE06FFF92BA64105C1EBBF8CF1 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8B829D4CC30D81864DC93E77C21397 /* MASShortcut.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E32B98647AB07456B828A21156B63C9 /* MASDictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D9BBB4850F1E89D20D10605CAC49D /* MASDictionaryTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BE2D344F2306A25322A82B5DCA0B030 /* Pods-EGrab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E53D7212F6CD80FBDE73118633D9507 /* Pods-EGrab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C3BF0B521E0AE010F33DFE41C31DD8B /* MASShortcutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3552B61AE82AD9B69E3F27B34A6E4A /* MASShortcutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CD33A460EAD78A9CF0D8B98F241CF77 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FC8CCD7302CD089C5BDAACC2D8CB4094 /* en.lproj */; };
+		889B912EC089DD5763F75D338139CCDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABA69F0221C659DB9B227618EF7F342 /* Cocoa.framework */; };
+		8E1549E095785DA0353A94D3A5A3A0A1 /* MASKeyCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E28929A1900D51D241045E119DBA0F /* MASKeyCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95CEFC408C39E5316C9580094A174054 /* MASShortcutView+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3773C76E0DF6EE44E4AC3A2CBBBAF1 /* MASShortcutView+Bindings.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9F9BFA6440B20760AFA19711FDF35817 /* MASShortcut.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D7E9FC5964FA263DA4976CD585C1 /* MASShortcut.bundle */; };
+		AA9C13D2E5085E71A20175247EB89127 /* MASDictionaryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F2001956C729BCE6A4AD35A918E364 /* MASDictionaryTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABBCBA26C3882C61741562D23FDD54B9 /* MASShortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 181E1C98E5E9F6BCE558065875E09F62 /* MASShortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B79BFE632B89F3C3370A6A664F662DAB /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A9476AE8BA1922C14288C5C4C828EF86 /* fr.lproj */; };
+		BB3341B54392C53EBA3E940B68F235B9 /* MASShortcutBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D7DD3577600BF7EFA2EC13B43526D0 /* MASShortcutBinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04B73BC066EEB163E5172DAC9B3F179 /* MASShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAD2DABCD8A071871C38B136893E0E /* MASShortcutValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C9F83AE94AB52EA45E4017413F4997FA /* MASHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = F86E6F9612A4D36D2E6F9018DC443337 /* MASHotKey.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CFF97DEEE94A90EE33F0222E3CD3AD71 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABA69F0221C659DB9B227618EF7F342 /* Cocoa.framework */; };
+		D424BF16F7D25D141F614EB61D9A755C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABA69F0221C659DB9B227618EF7F342 /* Cocoa.framework */; };
+		D4D247189146539A84CA3FA201D496AE /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 893F4F44824B4AFB12591347744A3E5C /* de.lproj */; };
+		D7B36734EE26DA97F49C3AC01DA7E09D /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7FE624AC4F47900D9510359260F04B /* MASShortcutView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DA30BCD4969B8775FAE4A8B14AE429E0 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 049023FAC754BAA1DE7016092A9BB4A5 /* cs.lproj */; };
+		F1653A2B00479E16B02DCA95D4A58C21 /* MASShortcutView+Bindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 5491CC974C555E89E7804112E5663B48 /* MASShortcutView+Bindings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4A53E43DF8DF282EB80F565431A146C /* MASShortcutMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BE46A49D1C8F97E48A7D7F5206D08 /* MASShortcutMonitor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F4E3F76EA9B369F441C57D3B048D1371 /* MASShortcut-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5E71AE79F62D10AD1418A6E54C8924 /* MASShortcut-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8170B01D946014ECA0CF7945C7518F2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BBAA9881FF63C61C04546866D9D60A /* Carbon.framework */; };
+		FA7A8B2AC84DD056F958C56885252BE7 /* Shortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CE83B0AD1197AB678ACAF3CD8FB9C8 /* Shortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB0969990AB964EBDE6E7BE49145513A /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6208E9F1752D328DF4171FAE50759410 /* es.lproj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D8393428B8EBAD9332FD70EE63F6424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DCB5231CDAA14591D022F9A7F57602;
+			remoteInfo = "MASShortcut-MASShortcut";
+		};
+		E9DBB7D1BBE60802FB0DEC92C8069B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1B510D40536FCCFF2A7CCA742F5118A;
+			remoteInfo = MASShortcut;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049023FAC754BAA1DE7016092A9BB4A5 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = cs.lproj; sourceTree = "<group>"; };
+		0A0D1B8CEE54373C120708293590D3C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA1321375CCC0132523443A60EA2132 /* Pods-EGrab-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EGrab-dummy.m"; sourceTree = "<group>"; };
+		11B3383FB16F68FCB94FDDDABD4D03CA /* MASShortcut.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MASShortcut.modulemap; sourceTree = "<group>"; };
+		181E1C98E5E9F6BCE558065875E09F62 /* MASShortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcut.h; path = Framework/MASShortcut.h; sourceTree = "<group>"; };
+		1F15B2E0FAA9BE5405E9909DD9374BF6 /* MASShortcut-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut-dummy.m"; sourceTree = "<group>"; };
+		21E25253579A38A718489357B91194CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C94C23A92299B81F3AD35DC2380BEC /* ResourceBundle-MASShortcut-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MASShortcut-Info.plist"; sourceTree = "<group>"; };
+		26235A832B1143A4E7D979FDE7619315 /* Pods-EGrabTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EGrabTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		263B72F86696416E3B86AE27853A4AB1 /* MASHotKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASHotKey.h; path = Framework/MASHotKey.h; sourceTree = "<group>"; };
+		346CD680466FB6134684ADBFCECA477D /* MASShortcut.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASShortcut.xcconfig; sourceTree = "<group>"; };
+		3600272BDC3AA29FC1DB368D3EF5C258 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
+		38D46091C62608F46C0E051A6072E98F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CF2FAF9E77A04977258CC38C1D7C8B8 /* Pods-EGrabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGrabUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E53D7212F6CD80FBDE73118633D9507 /* Pods-EGrab-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EGrab-umbrella.h"; sourceTree = "<group>"; };
+		3F145CBC274DD86BDE68A11E390BD8FA /* Pods-EGrab-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGrab-frameworks.sh"; sourceTree = "<group>"; };
+		461B946B4D3C631D2C714124E38B1935 /* Pods-EGrabTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EGrabTests-umbrella.h"; sourceTree = "<group>"; };
+		46FDC06106DE9D80E3AF6909518925FA /* Pods-EGrabTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGrabTests-resources.sh"; sourceTree = "<group>"; };
+		4A2117E9F7DC0570AC6F7DEE630EE007 /* Pods-EGrabUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGrabUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4B489E9A90D54AE190EA22E2E8119419 /* MASShortcut-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASShortcut-prefix.pch"; sourceTree = "<group>"; };
+		4BAAD2DABCD8A071871C38B136893E0E /* MASShortcutValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutValidator.m; path = Framework/MASShortcutValidator.m; sourceTree = "<group>"; };
+		4C3552B61AE82AD9B69E3F27B34A6E4A /* MASShortcutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutView.h; path = Framework/MASShortcutView.h; sourceTree = "<group>"; };
+		4C60A58CC19069A21E7F14B19B54EC80 /* Pods-EGrabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGrabUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D5C66184440228569EC2E0CCB6ABE9A /* Pods-EGrab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGrab.debug.xcconfig"; sourceTree = "<group>"; };
+		4DBDE019CAE7A00414587AFD9B0CC6CA /* Pods-EGrab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGrab.release.xcconfig"; sourceTree = "<group>"; };
+		51F2001956C729BCE6A4AD35A918E364 /* MASDictionaryTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASDictionaryTransformer.h; path = Framework/MASDictionaryTransformer.h; sourceTree = "<group>"; };
+		5491CC974C555E89E7804112E5663B48 /* MASShortcutView+Bindings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASShortcutView+Bindings.h"; path = "Framework/MASShortcutView+Bindings.h"; sourceTree = "<group>"; };
+		5B8B829D4CC30D81864DC93E77C21397 /* MASShortcut.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcut.m; path = Framework/MASShortcut.m; sourceTree = "<group>"; };
+		5DE1C76E4F64D8120778CF1537599A6C /* MASShortcutBinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutBinder.m; path = Framework/MASShortcutBinder.m; sourceTree = "<group>"; };
+		6208E9F1752D328DF4171FAE50759410 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
+		6B05B42DBD544A36871F2BA36DE6F1D4 /* Pods-EGrabUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EGrabUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FB299A8F4AEDB3FB7D7AEE386EE76B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E6D7E9FC5964FA263DA4976CD585C1 /* MASShortcut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MASShortcut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F569A7B54B3B2A4AD2AF85576DD376 /* Pods-EGrabUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EGrabUITests.modulemap"; sourceTree = "<group>"; };
+		7D051771FD9224F5789617A6EE690802 /* Pods-EGrab-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGrab-resources.sh"; sourceTree = "<group>"; };
+		86D7DD3577600BF7EFA2EC13B43526D0 /* MASShortcutBinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutBinder.h; path = Framework/MASShortcutBinder.h; sourceTree = "<group>"; };
+		88A6B200ED3CBDB162FAC55359E3BA32 /* Pods-EGrabUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGrabUITests-resources.sh"; sourceTree = "<group>"; };
+		893F4F44824B4AFB12591347744A3E5C /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = de.lproj; sourceTree = "<group>"; };
+		8A1BE46A49D1C8F97E48A7D7F5206D08 /* MASShortcutMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutMonitor.m; path = Framework/MASShortcutMonitor.m; sourceTree = "<group>"; };
+		8B04A67C789926A89191AD98A55BB7B1 /* MASLocalization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLocalization.m; path = Framework/MASLocalization.m; sourceTree = "<group>"; };
+		8C0AF5EC5B21268B982EAEAEB5540B26 /* Pods-EGrabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGrabTests.release.xcconfig"; sourceTree = "<group>"; };
+		902070F1A6C80CC5002D318997D59A89 /* Pods_EGrabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGrabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		942D0DB706803A1451ACDC237AED5C88 /* MASShortcut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MASShortcut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E536B1F7802AF2EF7DDDFFB3388C966 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25D783A157B9894CE1154D79D9F58CD /* Pods-EGrabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGrabTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D0E48BF95784BF69E9C9F69A023AF1 /* Pods-EGrabTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EGrabTests-dummy.m"; sourceTree = "<group>"; };
+		A7BBAA9881FF63C61C04546866D9D60A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		A8973ADE7485DE19EA63C281D980C695 /* Pods-EGrabTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EGrabTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9476AE8BA1922C14288C5C4C828EF86 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
+		AABA69F0221C659DB9B227618EF7F342 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		AE298D8AA4C642219CB48D173B218185 /* MASLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLocalization.h; path = Framework/MASLocalization.h; sourceTree = "<group>"; };
+		AFB50FB5CCFB9E37A3CCB15DEC3DC4AD /* Pods-EGrabUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EGrabUITests-dummy.m"; sourceTree = "<group>"; };
+		B342CD28F0634032219200863D31CF16 /* Pods_EGrabUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGrabUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E80260461A254F00550C078D94F3AB /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = it.lproj; sourceTree = "<group>"; };
+		BAFA61A9B42E8CB2F8849869F79FE092 /* Pods-EGrab-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EGrab-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF8EF95908E23B2C2E8AA21516042092 /* Pods-EGrabTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EGrabTests.modulemap"; sourceTree = "<group>"; };
+		C12D9BBB4850F1E89D20D10605CAC49D /* MASDictionaryTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASDictionaryTransformer.m; path = Framework/MASDictionaryTransformer.m; sourceTree = "<group>"; };
+		C3202F355DFA2A016E203C710E8C0F26 /* Pods_EGrab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGrab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E28929A1900D51D241045E119DBA0F /* MASKeyCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASKeyCodes.h; path = Framework/MASKeyCodes.h; sourceTree = "<group>"; };
+		C7B8CBD7A7AD0A24D97ECD3B5DC5F14D /* Pods-EGrab-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EGrab-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9489C43681168197B079C8EC89E25C7 /* Pods-EGrab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EGrab.modulemap"; sourceTree = "<group>"; };
+		CFA77331612A7B4BF9AAF068E1B13F5D /* Pods-EGrabUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EGrabUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D36C66829F7307E458032CB7B7524999 /* MASShortcutValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutValidator.h; path = Framework/MASShortcutValidator.h; sourceTree = "<group>"; };
+		D5E41A3312B26D5E9902C7B70B6E7B4C /* Pods-EGrabUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EGrabUITests-umbrella.h"; sourceTree = "<group>"; };
+		EF3773C76E0DF6EE44E4AC3A2CBBBAF1 /* MASShortcutView+Bindings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MASShortcutView+Bindings.m"; path = "Framework/MASShortcutView+Bindings.m"; sourceTree = "<group>"; };
+		EFF0CF217FC90C8A3D237CF57D8A99EA /* MASShortcutMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutMonitor.h; path = Framework/MASShortcutMonitor.h; sourceTree = "<group>"; };
+		F1B072C17DC936CCDD939A9407F8C080 /* Pods-EGrabTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGrabTests-frameworks.sh"; sourceTree = "<group>"; };
+		F3CE83B0AD1197AB678ACAF3CD8FB9C8 /* Shortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Shortcut.h; path = Framework/Shortcut.h; sourceTree = "<group>"; };
+		F86E6F9612A4D36D2E6F9018DC443337 /* MASHotKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASHotKey.m; path = Framework/MASHotKey.m; sourceTree = "<group>"; };
+		FC8CCD7302CD089C5BDAACC2D8CB4094 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		FF5E71AE79F62D10AD1418A6E54C8924 /* MASShortcut-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASShortcut-umbrella.h"; sourceTree = "<group>"; };
+		FF7FE624AC4F47900D9510359260F04B /* MASShortcutView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutView.m; path = Framework/MASShortcutView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096844AEB68877631D079B2C42C5DBC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4047DF4BF395701C8F7D0461043353 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31630418AAB3E2CC51DEC2A0757BE4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060CC9D5DE30F0C8764569E4793E7DE6 /* AppKit.framework in Frameworks */,
+				F8170B01D946014ECA0CF7945C7518F2 /* Carbon.framework in Frameworks */,
+				D424BF16F7D25D141F614EB61D9A755C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A287867C3447E6007957CDE4B255CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889B912EC089DD5763F75D338139CCDE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E502ACA5D994EFAF6B21D71DF59B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF97DEEE94A90EE33F0222E3CD3AD71 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704FC455CE8D4203C475A63173470FF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081E31524CB9DD8AD1D66508DF3B1278 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0B5B0EC4A6EC94DECBD26577CD5F237 /* Pods-EGrab */,
+				E0DFE521293EB9D1EFC893EF1DD8FA15 /* Pods-EGrabTests */,
+				FFCF0BE954B6D1F48B1F8B931E0BE57B /* Pods-EGrabUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		12F9EFF3552A8E5EE4297174D50153C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8049B0FBF68A115CC0828F4B59480 /* MASShortcut */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D2700826E1D1F87226BC8949B10E228 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FB299A8F4AEDB3FB7D7AEE386EE76B2 /* Info.plist */,
+				11B3383FB16F68FCB94FDDDABD4D03CA /* MASShortcut.modulemap */,
+				346CD680466FB6134684ADBFCECA477D /* MASShortcut.xcconfig */,
+				1F15B2E0FAA9BE5405E9909DD9374BF6 /* MASShortcut-dummy.m */,
+				4B489E9A90D54AE190EA22E2E8119419 /* MASShortcut-prefix.pch */,
+				FF5E71AE79F62D10AD1418A6E54C8924 /* MASShortcut-umbrella.h */,
+				24C94C23A92299B81F3AD35DC2380BEC /* ResourceBundle-MASShortcut-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MASShortcut";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				96D996393384F21972E2DD81788EE22C /* Frameworks */,
+				12F9EFF3552A8E5EE4297174D50153C2 /* Pods */,
+				C64B82DE3C5D92E09B3C38B0348FD55F /* Products */,
+				081E31524CB9DD8AD1D66508DF3B1278 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		96D996393384F21972E2DD81788EE22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D2EDA8772A3856CB129EFE53C253563 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D2EDA8772A3856CB129EFE53C253563 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				38D46091C62608F46C0E051A6072E98F /* AppKit.framework */,
+				A7BBAA9881FF63C61C04546866D9D60A /* Carbon.framework */,
+				AABA69F0221C659DB9B227618EF7F342 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		B0B5B0EC4A6EC94DECBD26577CD5F237 /* Pods-EGrab */ = {
+			isa = PBXGroup;
+			children = (
+				21E25253579A38A718489357B91194CB /* Info.plist */,
+				C9489C43681168197B079C8EC89E25C7 /* Pods-EGrab.modulemap */,
+				C7B8CBD7A7AD0A24D97ECD3B5DC5F14D /* Pods-EGrab-acknowledgements.markdown */,
+				BAFA61A9B42E8CB2F8849869F79FE092 /* Pods-EGrab-acknowledgements.plist */,
+				0CA1321375CCC0132523443A60EA2132 /* Pods-EGrab-dummy.m */,
+				3F145CBC274DD86BDE68A11E390BD8FA /* Pods-EGrab-frameworks.sh */,
+				7D051771FD9224F5789617A6EE690802 /* Pods-EGrab-resources.sh */,
+				3E53D7212F6CD80FBDE73118633D9507 /* Pods-EGrab-umbrella.h */,
+				4D5C66184440228569EC2E0CCB6ABE9A /* Pods-EGrab.debug.xcconfig */,
+				4DBDE019CAE7A00414587AFD9B0CC6CA /* Pods-EGrab.release.xcconfig */,
+			);
+			name = "Pods-EGrab";
+			path = "Target Support Files/Pods-EGrab";
+			sourceTree = "<group>";
+		};
+		C64B82DE3C5D92E09B3C38B0348FD55F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D7E9FC5964FA263DA4976CD585C1 /* MASShortcut.bundle */,
+				942D0DB706803A1451ACDC237AED5C88 /* MASShortcut.framework */,
+				C3202F355DFA2A016E203C710E8C0F26 /* Pods_EGrab.framework */,
+				902070F1A6C80CC5002D318997D59A89 /* Pods_EGrabTests.framework */,
+				B342CD28F0634032219200863D31CF16 /* Pods_EGrabUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0DFE521293EB9D1EFC893EF1DD8FA15 /* Pods-EGrabTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E536B1F7802AF2EF7DDDFFB3388C966 /* Info.plist */,
+				BF8EF95908E23B2C2E8AA21516042092 /* Pods-EGrabTests.modulemap */,
+				26235A832B1143A4E7D979FDE7619315 /* Pods-EGrabTests-acknowledgements.markdown */,
+				A8973ADE7485DE19EA63C281D980C695 /* Pods-EGrabTests-acknowledgements.plist */,
+				A4D0E48BF95784BF69E9C9F69A023AF1 /* Pods-EGrabTests-dummy.m */,
+				F1B072C17DC936CCDD939A9407F8C080 /* Pods-EGrabTests-frameworks.sh */,
+				46FDC06106DE9D80E3AF6909518925FA /* Pods-EGrabTests-resources.sh */,
+				461B946B4D3C631D2C714124E38B1935 /* Pods-EGrabTests-umbrella.h */,
+				A25D783A157B9894CE1154D79D9F58CD /* Pods-EGrabTests.debug.xcconfig */,
+				8C0AF5EC5B21268B982EAEAEB5540B26 /* Pods-EGrabTests.release.xcconfig */,
+			);
+			name = "Pods-EGrabTests";
+			path = "Target Support Files/Pods-EGrabTests";
+			sourceTree = "<group>";
+		};
+		F27F927A1374C1D3ECD0D89A07181E4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				049023FAC754BAA1DE7016092A9BB4A5 /* cs.lproj */,
+				893F4F44824B4AFB12591347744A3E5C /* de.lproj */,
+				FC8CCD7302CD089C5BDAACC2D8CB4094 /* en.lproj */,
+				6208E9F1752D328DF4171FAE50759410 /* es.lproj */,
+				A9476AE8BA1922C14288C5C4C828EF86 /* fr.lproj */,
+				B5E80260461A254F00550C078D94F3AB /* it.lproj */,
+				3600272BDC3AA29FC1DB368D3EF5C258 /* ja.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FCD8049B0FBF68A115CC0828F4B59480 /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				51F2001956C729BCE6A4AD35A918E364 /* MASDictionaryTransformer.h */,
+				C12D9BBB4850F1E89D20D10605CAC49D /* MASDictionaryTransformer.m */,
+				263B72F86696416E3B86AE27853A4AB1 /* MASHotKey.h */,
+				F86E6F9612A4D36D2E6F9018DC443337 /* MASHotKey.m */,
+				C5E28929A1900D51D241045E119DBA0F /* MASKeyCodes.h */,
+				AE298D8AA4C642219CB48D173B218185 /* MASLocalization.h */,
+				8B04A67C789926A89191AD98A55BB7B1 /* MASLocalization.m */,
+				181E1C98E5E9F6BCE558065875E09F62 /* MASShortcut.h */,
+				5B8B829D4CC30D81864DC93E77C21397 /* MASShortcut.m */,
+				86D7DD3577600BF7EFA2EC13B43526D0 /* MASShortcutBinder.h */,
+				5DE1C76E4F64D8120778CF1537599A6C /* MASShortcutBinder.m */,
+				EFF0CF217FC90C8A3D237CF57D8A99EA /* MASShortcutMonitor.h */,
+				8A1BE46A49D1C8F97E48A7D7F5206D08 /* MASShortcutMonitor.m */,
+				D36C66829F7307E458032CB7B7524999 /* MASShortcutValidator.h */,
+				4BAAD2DABCD8A071871C38B136893E0E /* MASShortcutValidator.m */,
+				4C3552B61AE82AD9B69E3F27B34A6E4A /* MASShortcutView.h */,
+				FF7FE624AC4F47900D9510359260F04B /* MASShortcutView.m */,
+				5491CC974C555E89E7804112E5663B48 /* MASShortcutView+Bindings.h */,
+				EF3773C76E0DF6EE44E4AC3A2CBBBAF1 /* MASShortcutView+Bindings.m */,
+				F3CE83B0AD1197AB678ACAF3CD8FB9C8 /* Shortcut.h */,
+				F27F927A1374C1D3ECD0D89A07181E4B /* Resources */,
+				3D2700826E1D1F87226BC8949B10E228 /* Support Files */,
+			);
+			path = MASShortcut;
+			sourceTree = "<group>";
+		};
+		FFCF0BE954B6D1F48B1F8B931E0BE57B /* Pods-EGrabUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0D1B8CEE54373C120708293590D3C3 /* Info.plist */,
+				79F569A7B54B3B2A4AD2AF85576DD376 /* Pods-EGrabUITests.modulemap */,
+				CFA77331612A7B4BF9AAF068E1B13F5D /* Pods-EGrabUITests-acknowledgements.markdown */,
+				6B05B42DBD544A36871F2BA36DE6F1D4 /* Pods-EGrabUITests-acknowledgements.plist */,
+				AFB50FB5CCFB9E37A3CCB15DEC3DC4AD /* Pods-EGrabUITests-dummy.m */,
+				4A2117E9F7DC0570AC6F7DEE630EE007 /* Pods-EGrabUITests-frameworks.sh */,
+				88A6B200ED3CBDB162FAC55359E3BA32 /* Pods-EGrabUITests-resources.sh */,
+				D5E41A3312B26D5E9902C7B70B6E7B4C /* Pods-EGrabUITests-umbrella.h */,
+				4C60A58CC19069A21E7F14B19B54EC80 /* Pods-EGrabUITests.debug.xcconfig */,
+				3CF2FAF9E77A04977258CC38C1D7C8B8 /* Pods-EGrabUITests.release.xcconfig */,
+			);
+			name = "Pods-EGrabUITests";
+			path = "Target Support Files/Pods-EGrabUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16A654F79D118168EDDDFB13A99732A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9E42A596D0FE020A233186518259A4 /* Pods-EGrabUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BE373A3EC23204C3275724C836F1D1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1342936E1B2ED51F60A7802EDD60BECE /* Pods-EGrabTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7F170BF886536D1424C71BF9A230E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9C13D2E5085E71A20175247EB89127 /* MASDictionaryTransformer.h in Headers */,
+				358812FEC60475F49345C8F7D07CE61E /* MASHotKey.h in Headers */,
+				8E1549E095785DA0353A94D3A5A3A0A1 /* MASKeyCodes.h in Headers */,
+				438355D74FE0EAD9C90317C8413FEFB1 /* MASLocalization.h in Headers */,
+				F4E3F76EA9B369F441C57D3B048D1371 /* MASShortcut-umbrella.h in Headers */,
+				ABBCBA26C3882C61741562D23FDD54B9 /* MASShortcut.h in Headers */,
+				BB3341B54392C53EBA3E940B68F235B9 /* MASShortcutBinder.h in Headers */,
+				339D41F1E59D212C2A66A761B6A99D79 /* MASShortcutMonitor.h in Headers */,
+				210062E63EDD796FD512D97EB99669EB /* MASShortcutValidator.h in Headers */,
+				F1653A2B00479E16B02DCA95D4A58C21 /* MASShortcutView+Bindings.h in Headers */,
+				7C3BF0B521E0AE010F33DFE41C31DD8B /* MASShortcutView.h in Headers */,
+				FA7A8B2AC84DD056F958C56885252BE7 /* Shortcut.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B29C2464B7E11A301797DE7A7187C2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE2D344F2306A25322A82B5DCA0B030 /* Pods-EGrab-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2128F65835C968E51725962784F4D4BA /* Pods-EGrab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CE5FFFDD94C92CE7AD27BF4E3305D19 /* Build configuration list for PBXNativeTarget "Pods-EGrab" */;
+			buildPhases = (
+				9588B2C460D89F11CF7BE729B3262D6E /* Sources */,
+				3A287867C3447E6007957CDE4B255CFF /* Frameworks */,
+				5B29C2464B7E11A301797DE7A7187C2E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5569DBBD287388A3406B4F969E8D2C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-EGrab";
+			productName = "Pods-EGrab";
+			productReference = C3202F355DFA2A016E203C710E8C0F26 /* Pods_EGrab.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30BE2C5485C602C0D2714950F2B9D0D0 /* Pods-EGrabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D58A907D6DE87AEF41DC123C4A0834CB /* Build configuration list for PBXNativeTarget "Pods-EGrabUITests" */;
+			buildPhases = (
+				0624BC20AC00AFE9CC891A60E2CC53DC /* Sources */,
+				096844AEB68877631D079B2C42C5DBC9 /* Frameworks */,
+				16A654F79D118168EDDDFB13A99732A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EGrabUITests";
+			productName = "Pods-EGrabUITests";
+			productReference = B342CD28F0634032219200863D31CF16 /* Pods_EGrabUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7179EB3944B4747C5EF2BF0B7490B3B /* Pods-EGrabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0906703CCC0A32DBCACADEBF08B22214 /* Build configuration list for PBXNativeTarget "Pods-EGrabTests" */;
+			buildPhases = (
+				5EC262381AF9A26888855DDA52FE5A1F /* Sources */,
+				51E502ACA5D994EFAF6B21D71DF59B73 /* Frameworks */,
+				1BE373A3EC23204C3275724C836F1D1C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EGrabTests";
+			productName = "Pods-EGrabTests";
+			productReference = 902070F1A6C80CC5002D318997D59A89 /* Pods_EGrabTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1B510D40536FCCFF2A7CCA742F5118A /* MASShortcut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63CC66E35B10101ACECC80183D13501 /* Build configuration list for PBXNativeTarget "MASShortcut" */;
+			buildPhases = (
+				B4A1858EEDE486E96518D1750E57A673 /* Sources */,
+				31630418AAB3E2CC51DEC2A0757BE4EA /* Frameworks */,
+				CBEECDE977F1EA8424BAF541013E52E7 /* Resources */,
+				1F7F170BF886536D1424C71BF9A230E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D62F01E28B7643E47A9F1B7D65E4D680 /* PBXTargetDependency */,
+			);
+			name = MASShortcut;
+			productName = MASShortcut;
+			productReference = 942D0DB706803A1451ACDC237AED5C88 /* MASShortcut.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7DCB5231CDAA14591D022F9A7F57602 /* MASShortcut-MASShortcut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572AECA5DBA5B8AB0DC01C3400219809 /* Build configuration list for PBXNativeTarget "MASShortcut-MASShortcut" */;
+			buildPhases = (
+				885B572D79EBFAB403386D692C687E3F /* Sources */,
+				704FC455CE8D4203C475A63173470FF2 /* Frameworks */,
+				9592184232A719D31F74989BBA6FF65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MASShortcut-MASShortcut";
+			productName = "MASShortcut-MASShortcut";
+			productReference = 77E6D7E9FC5964FA263DA4976CD585C1 /* MASShortcut.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C64B82DE3C5D92E09B3C38B0348FD55F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1B510D40536FCCFF2A7CCA742F5118A /* MASShortcut */,
+				F7DCB5231CDAA14591D022F9A7F57602 /* MASShortcut-MASShortcut */,
+				2128F65835C968E51725962784F4D4BA /* Pods-EGrab */,
+				A7179EB3944B4747C5EF2BF0B7490B3B /* Pods-EGrabTests */,
+				30BE2C5485C602C0D2714950F2B9D0D0 /* Pods-EGrabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9592184232A719D31F74989BBA6FF65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA30BCD4969B8775FAE4A8B14AE429E0 /* cs.lproj in Resources */,
+				D4D247189146539A84CA3FA201D496AE /* de.lproj in Resources */,
+				7CD33A460EAD78A9CF0D8B98F241CF77 /* en.lproj in Resources */,
+				FB0969990AB964EBDE6E7BE49145513A /* es.lproj in Resources */,
+				B79BFE632B89F3C3370A6A664F662DAB /* fr.lproj in Resources */,
+				4AB651AF882D7114711D54EFC73122D9 /* it.lproj in Resources */,
+				2FEF37741CA12D82F5AC920659EB1BCE /* ja.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEECDE977F1EA8424BAF541013E52E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9BFA6440B20760AFA19711FDF35817 /* MASShortcut.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0624BC20AC00AFE9CC891A60E2CC53DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E5D3E4AE55FDAF4EA50119FE10EA7B /* Pods-EGrabUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC262381AF9A26888855DDA52FE5A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4771642D5B18A806022FEF4FE3D506 /* Pods-EGrabTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885B572D79EBFAB403386D692C687E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9588B2C460D89F11CF7BE729B3262D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3635E70D36BD0089FDCABC1556816AAF /* Pods-EGrab-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A1858EEDE486E96518D1750E57A673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E32B98647AB07456B828A21156B63C9 /* MASDictionaryTransformer.m in Sources */,
+				C9F83AE94AB52EA45E4017413F4997FA /* MASHotKey.m in Sources */,
+				09C54D827051B15CFE1DE40025B3800E /* MASLocalization.m in Sources */,
+				263AFBA332EC1C34AD3D8464D8BB88CB /* MASShortcut-dummy.m in Sources */,
+				52D4D9AE06FFF92BA64105C1EBBF8CF1 /* MASShortcut.m in Sources */,
+				1EFA842F25DB0842363729B64A41D21A /* MASShortcutBinder.m in Sources */,
+				F4A53E43DF8DF282EB80F565431A146C /* MASShortcutMonitor.m in Sources */,
+				C04B73BC066EEB163E5172DAC9B3F179 /* MASShortcutValidator.m in Sources */,
+				95CEFC408C39E5316C9580094A174054 /* MASShortcutView+Bindings.m in Sources */,
+				D7B36734EE26DA97F49C3AC01DA7E09D /* MASShortcutView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D62F01E28B7643E47A9F1B7D65E4D680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MASShortcut-MASShortcut";
+			target = F7DCB5231CDAA14591D022F9A7F57602 /* MASShortcut-MASShortcut */;
+			targetProxy = 8D8393428B8EBAD9332FD70EE63F6424 /* PBXContainerItemProxy */;
+		};
+		F5569DBBD287388A3406B4F969E8D2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MASShortcut;
+			target = C1B510D40536FCCFF2A7CCA742F5118A /* MASShortcut */;
+			targetProxy = E9DBB7D1BBE60802FB0DEC92C8069B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1174E9D9526A022F441FBBB7DC05E751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346CD680466FB6134684ADBFCECA477D /* MASShortcut.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MASShortcut";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/ResourceBundle-MASShortcut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3123DE25AF6DC1AD5462D07CEBC86297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5C66184440228569EC2E0CCB6ABE9A /* Pods-EGrab.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EGrab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-EGrab/Pods-EGrab.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EGrab;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E1621E8B8C3D8706CC0D908D0C0D205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A25D783A157B9894CE1154D79D9F58CD /* Pods-EGrabTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EGrabTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-EGrabTests/Pods-EGrabTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EGrabTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DCD94A36FD7AC27A8A0DB0C93D768F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346CD680466FB6134684ADBFCECA477D /* MASShortcut.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MASShortcut/MASShortcut-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/MASShortcut/MASShortcut.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		580876571B8350332485BB45F5731DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346CD680466FB6134684ADBFCECA477D /* MASShortcut.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MASShortcut";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/ResourceBundle-MASShortcut-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5D3522E0E9BFEC38F340B6BF2F200AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346CD680466FB6134684ADBFCECA477D /* MASShortcut.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MASShortcut/MASShortcut-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MASShortcut/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/MASShortcut/MASShortcut.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MASShortcut;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F755C6BCF6A5C1AA6A9D4E4FD15507C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBDE019CAE7A00414587AFD9B0CC6CA /* Pods-EGrab.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EGrab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-EGrab/Pods-EGrab.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EGrab;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F04C86B17D58509A84759B395BA60E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF2FAF9E77A04977258CC38C1D7C8B8 /* Pods-EGrabUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EGrabUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-EGrabUITests/Pods-EGrabUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EGrabUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D09BB2A3F58F0F209F3CE10A091218B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C0AF5EC5B21268B982EAEAEB5540B26 /* Pods-EGrabTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EGrabTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-EGrabTests/Pods-EGrabTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EGrabTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B319CC6A6F8E82D3AE82B6B85BD48AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C60A58CC19069A21E7F14B19B54EC80 /* Pods-EGrabUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EGrabUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-EGrabUITests/Pods-EGrabUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EGrabUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0906703CCC0A32DBCACADEBF08B22214 /* Build configuration list for PBXNativeTarget "Pods-EGrabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1621E8B8C3D8706CC0D908D0C0D205 /* Debug */,
+				9D09BB2A3F58F0F209F3CE10A091218B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CE5FFFDD94C92CE7AD27BF4E3305D19 /* Build configuration list for PBXNativeTarget "Pods-EGrab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3123DE25AF6DC1AD5462D07CEBC86297 /* Debug */,
+				5F755C6BCF6A5C1AA6A9D4E4FD15507C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
+				578820E498FFD85CA5D93A33D365FBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572AECA5DBA5B8AB0DC01C3400219809 /* Build configuration list for PBXNativeTarget "MASShortcut-MASShortcut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1174E9D9526A022F441FBBB7DC05E751 /* Debug */,
+				580876571B8350332485BB45F5731DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63CC66E35B10101ACECC80183D13501 /* Build configuration list for PBXNativeTarget "MASShortcut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCD94A36FD7AC27A8A0DB0C93D768F9 /* Debug */,
+				5D3522E0E9BFEC38F340B6BF2F200AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D58A907D6DE87AEF41DC123C4A0834CB /* Build configuration list for PBXNativeTarget "Pods-EGrabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B319CC6A6F8E82D3AE82B6B85BD48AFC /* Debug */,
+				8F04C86B17D58509A84759B395BA60E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

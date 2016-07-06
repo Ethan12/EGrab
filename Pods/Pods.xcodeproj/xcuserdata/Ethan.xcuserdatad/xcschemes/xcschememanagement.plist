@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MASShortcut-MASShortcut.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MASShortcut.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EGrab.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EGrabTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EGrabUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2128F65835C968E51725962784F4D4BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30BE2C5485C602C0D2714950F2B9D0D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7179EB3944B4747C5EF2BF0B7490B3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1B510D40536FCCFF2A7CCA742F5118A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F7DCB5231CDAA14591D022F9A7F57602</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

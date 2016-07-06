@@ -138,10 +138,23 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         print(json["File"]!)
         
         let imgURL = "http://i.ethanmcm.me/img/" + (json["File"]! as! String)
+            
+        let path = "/Users/Ethan/" + (json["File"]! as! String)
         
         let pb = NSPasteboard.generalPasteboard()
         pb.clearContents()
         pb.setString(imgURL, forType: NSStringPboardType)
+        
+        if(NSFileManager.defaultManager().fileExistsAtPath(path))
+        {
+            do{
+                try NSFileManager.defaultManager().removeItemAtPath(path)
+                print("File Removed")
+                    }catch{
+                        print("Error in removing file")
+                }
+            }
+            
         }else{
             print(json)
         }

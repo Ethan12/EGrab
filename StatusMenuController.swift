@@ -99,6 +99,8 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         let idata: NSData? = NSData(contentsOfFile: path)
+        
+        if(idata?.length > 1){
             
             request.HTTPBody = createBodyWithParameters(parameters, filePathKey: "file", imageDataKey: idata!, boundary: boundary, filename: name)
         
@@ -128,6 +130,9 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         }
         
         task.resume()
+        }else{
+            print("User esc or unexplained error")
+        }
     }
     
     func handleCompletion(json : NSDictionary)

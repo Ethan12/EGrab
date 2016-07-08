@@ -20,17 +20,17 @@ protocol PreferencesWindowDelegate {
     func preferencesDidUpdate()
 }
 
+var MASObservingContext = UnsafeMutablePointer<Void>.alloc(1)
+
 class PreferencesWindow: NSWindowController, NSWindowDelegate {
     
     var delegate: PreferencesWindowDelegate?
     
-    @IBOutlet var authKeyField: NSTextField!
-    @IBOutlet var uploadTextField: NSTextField!
-    @IBOutlet var shortcutView: MASShortcutView!
+    let defaults = NSUserDefaults.standardUserDefaults()
     
-    override var windowNibName : String! {
-        return "PreferencesWindow"
-    }
+    var kShortcut:MASShortcut!
+    
+    @IBOutlet var shortcutView: MASShortcutView!
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -38,8 +38,6 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
         self.window?.center()
         self.window?.makeKeyAndOrderFront(nil)
         NSApp.activateIgnoringOtherApps(true)
-        
-        print("opened")
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let uploadURL = defaults.stringForKey("uploadURL") ?? DEFAULT_UPLOADURL
@@ -72,13 +70,17 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
         
         
     }
+    override var windowNibName : String! {
+        return "PreferencesWindow"
+    }
+    
+    @IBOutlet weak var authKeyField: NSTextField!
+    @IBOutlet weak var uploadTextField: NSTextField!
     
     func windowWillClose(notification: NSNotification) {
-        print("CALLED")
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setValue(authKeyField.stringValue, forKey: "authKey")
         defaults.setValue(uploadTextField.stringValue, forKey: "uploadURL")
         delegate?.preferencesDidUpdate()
     }
-    
 }

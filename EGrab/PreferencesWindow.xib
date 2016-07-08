@@ -7,9 +7,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindow" customModule="EGrab" customModuleProvider="target">
             <connections>
-                <outlet property="authKeyField" destination="X7X-3b-Zsx" id="sN0-sh-23L"/>
+                <outlet property="authKeyField" destination="X7X-3b-Zsx" id="yIr-yA-1wx"/>
                 <outlet property="shortcutView" destination="l3z-Il-4l3" id="H2f-6j-AJY"/>
-                <outlet property="uploadTextField" destination="Wg7-o2-1hw" id="3xz-XK-ZRQ"/>
+                <outlet property="uploadTextField" destination="Wg7-o2-1hw" id="c1b-c2-Xao"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -69,6 +69,9 @@
                     </textField>
                 </subviews>
             </view>
+            <connections>
+                <outlet property="delegate" destination="l3z-Il-4l3" id="veu-5k-iWP"/>
+            </connections>
             <point key="canvasLocation" x="273.5" y="280.5"/>
         </window>
         <menuItem title="Item" id="pDa-Dr-fLv">

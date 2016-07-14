@@ -7,9 +7,7 @@
 //
 
 import Cocoa
-import AppKit
 import MASShortcut
-import Carbon
 
 
 let MASCustomShortcutKey = "customShortcut"
@@ -26,17 +24,16 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
     
     var delegate: PreferencesWindowDelegate?
     
-    let defaults = NSUserDefaults.standardUserDefaults()
-    
-    var kShortcut:MASShortcut!
-    
     @IBOutlet var shortcutView: MASShortcutView!
+    @IBOutlet weak var authKeyField: NSTextField!
+    @IBOutlet weak var uploadTextField: NSTextField!
     
     override func windowDidLoad() {
         super.windowDidLoad()
         
         self.window?.center()
         self.window?.makeKeyAndOrderFront(nil)
+        self.window?.delegate = self
         NSApp.activateIgnoringOtherApps(true)
         
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -74,8 +71,6 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
         return "PreferencesWindow"
     }
     
-    @IBOutlet weak var authKeyField: NSTextField!
-    @IBOutlet weak var uploadTextField: NSTextField!
     
     func windowWillClose(notification: NSNotification) {
         let defaults = NSUserDefaults.standardUserDefaults()

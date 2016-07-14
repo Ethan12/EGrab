@@ -8,8 +8,6 @@
 
 import Cocoa
 import MASShortcut
-import AppKit
-import Carbon
 
 let DEFAULT_UPLOADURL = ""
 let DEFAULT_AUTHKEY = ""
@@ -77,17 +75,19 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     func uploadToServer(path:String, name:String){
         
         let defaults = NSUserDefaults.standardUserDefaults()
-        let uploadURL = defaults.stringForKey("uploadURL") ?? DEFAULT_UPLOADURL
+        //let uploadURL = defaults.stringForKey("uploadURL") ?? DEFAULT_UPLOADURL
         
         let authK = defaults.stringForKey("authKey") ?? DEFAULT_AUTHKEY
         
+        let uploadURL = "http://i.ethanmcm.me/upload.php"
         
         let postURL = NSURL(string: uploadURL)
         
         let request = NSMutableURLRequest(URL:postURL!);
         request.HTTPMethod = "POST";
         
-        print(authK)
+        print("Upload File URL:" + uploadURL)
+        print("Auth Key:" + authK)
         
         let parameters  = [
             "fileName" : "\(name)",
@@ -112,6 +112,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
                 return
             }
             
+           
             //print out response object
             print("******* response = \(response)")
             
@@ -138,32 +139,41 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     func handleCompletion(json : NSDictionary)
     {
         let status = json["Status"]!
-        if(status as! String == "OK")
-        {
-        print(json["File"]!)
         
         let imgURL = "http://i.ethanmcm.me/img/" + (json["File"]! as! String)
+        
+        let userName = NSUserName()
+        let workingDirectory = "/Users/\(userName)/"
+        
+        let imgPath = workingDirectory + (json["File"]! as! String)
+        
+        if(status as! String == "OK")
+        {
             
-        let path = "/Users/Ethan/" + (json["File"]! as! String)
+            print(json["File"]!)
         
-        let pb = NSPasteboard.generalPasteboard()
-        pb.clearContents()
-        pb.setString(imgURL, forType: NSStringPboardType)
+            let pb = NSPasteboard.generalPasteboard()
+            pb.clearContents()
+            pb.setString(imgURL, forType: NSStringPboardType)
+            removeImageAtPath(imgPath)
+            
+        }else{
+            removeImageAtPath(imgPath)
+        }
         
+    }
+    
+    func removeImageAtPath(path : String)
+    {
         if(NSFileManager.defaultManager().fileExistsAtPath(path))
         {
             do{
                 try NSFileManager.defaultManager().removeItemAtPath(path)
                 print("File Removed")
-                    }catch{
-                        print("Error in removing file")
-                }
+            }catch{
+                print("Error in removing file")
             }
-            
-        }else{
-            print(json)
         }
-        
     }
 
     

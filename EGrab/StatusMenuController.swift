@@ -91,58 +91,67 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         
         let uploadURL = defaults.stringForKey("uploadURL") ?? DEFAULT_UPLOADURL
         
-        let postURL = NSURL(string: uploadURL)
-        
-        let request = NSMutableURLRequest(URL:postURL!);
-        request.HTTPMethod = "POST";
-        
-        print("Upload File URL:" + uploadURL)
-        print("Auth Key:" + authK)
-        
-        let parameters  = [
-            "fileName" : "\(name)",
-            "AuthKey" : "\(authK)"
-        ]
-        
-        let boundary = generateBoundaryString()
-        
-        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-        
-        let idata: NSData? = NSData(contentsOfFile: path)
-        
-        if(idata?.length > 1){
+        if(uploadURL != DEFAULT_UPLOADURL && authK != DEFAULT_AUTHKEY)
+        {
+            let postURL = NSURL(string: uploadURL)
             
-            request.HTTPBody = createBodyWithParameters(parameters, filePathKey: "file", imageDataKey: idata!, boundary: boundary, filename: name)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
-            data, response, error in
+            let request = NSMutableURLRequest(URL:postURL!);
+            request.HTTPMethod = "POST";
             
-            if error != nil {
-                print("error=\(error)")
-                return
-            }
+            print("Upload File URL:" + uploadURL)
+            print("Auth Key:" + authK)
             
-           
-            //print out response object
-            print("******* response = \(response)")
+            let parameters  = [
+                "fileName" : "\(name)",
+                "AuthKey" : "\(authK)"
+            ]
             
-            // Print out reponse body
-            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print("****** response data = \(responseString!)")
+            let boundary = generateBoundaryString()
             
-            do {
-                if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary {
-                    //print(json)
-                    self.handleCompletion(json)
+            request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+            
+            let idata: NSData? = NSData(contentsOfFile: path)
+            
+            if(idata?.length > 1){
+                
+                request.HTTPBody = createBodyWithParameters(parameters, filePathKey: "file", imageDataKey: idata!, boundary: boundary, filename: name)
+                
+                let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+                    data, response, error in
+                    
+                    if error != nil {
+                        print("error=\(error)")
+                        return
+                    }
+                    
+                    
+                    //print out response object
+                    print("******* response = \(response)")
+                    
+                    // Print out reponse body
+                    let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                    print("****** response data = \(responseString!)")
+                    
+                    do {
+                        if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary {
+                            //print(json)
+                            self.handleCompletion(json)
+                        }
+                    } catch let error as NSError {
+                        print(error.localizedDescription)
+                    }
                 }
-            } catch let error as NSError {
-                print(error.localizedDescription)
+                
+                task.resume()
+            }else{
+                print("User esc or unexplained error")
             }
-        }
-        
-        task.resume()
         }else{
-            print("User esc or unexplained error")
+            let error : NSAlert = NSAlert()
+            error.messageText = "EGrab"
+            error.informativeText = "Please check preferences and try again!"
+            error.addButtonWithTitle("OK")
+            error.runModal()
         }
     }
     
@@ -188,7 +197,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
             
         }else{
             
-            notification.informativeText = "Error - please check preferences"
+            notification.informativeText = "Error - Please check preferences and try again!"
             notification.soundName = NSUserNotificationDefaultSoundName
             
             nfc.deliverNotification(notification)

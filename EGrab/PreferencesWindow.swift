@@ -66,8 +66,13 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
             MASShortcutMonitor.sharedMonitor().registerShortcut(self.shortcutView.shortcutValue, withAction: callback)
         }
         
+        
+        let customSh = defaults.stringForKey("customShortcut")
+        
+        if(customSh != nil){
         MASShortcutMonitor.sharedMonitor().registerShortcut(self.shortcutView.shortcutValue, withAction: {
         })
+        }
         
         
     }

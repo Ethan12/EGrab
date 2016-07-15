@@ -9,9 +9,9 @@
 import Cocoa
 import MASShortcut
 
-let DEFAULT_UPLOADURL = ""
-let DEFAULT_PRURL = ""
-let DEFAULT_AUTHKEY = ""
+let DEFAULT_UPLOADURL = "Enter URL to Upload File"
+let DEFAULT_PRURL = "Enter Post URL"
+let DEFAULT_AUTHKEY = "Enter AuthKey"
 
 let MASCustomShortcutKeys = "customShortcut"
 let MASCustomShortcutEnabledKeys = "customShortcutEnabled"
@@ -35,6 +35,16 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         
         
         let defaults = NSUserDefaults.standardUserDefaults()
+        
+        let firstRun = defaults.stringForKey("firstRun")
+        
+        //Initialise Defaults
+        if(firstRun != nil){
+            defaults.setValue(DEFAULT_UPLOADURL, forKey: "uploadURL")
+            defaults.setValue(DEFAULT_AUTHKEY, forKey: "authKey")
+            defaults.setValue(DEFAULT_PRURL, forKey: "prURL")
+            defaults.setValue("run", forKey: "firstRun")
+        }
         
         defaults.registerDefaults([
             MASHardcodedShortcutEnabledKeys: true,

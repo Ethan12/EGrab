@@ -56,7 +56,7 @@
 		AA1B20871D2CDC3600DA5440 /* EGrabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGrabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1B208B1D2CDC3600DA5440 /* EGrabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGrabUITests.swift; sourceTree = "<group>"; };
 		AA1B208D1D2CDC3600DA5440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA1B20991D2CE20200DA5440 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusMenuController.swift; path = ../StatusMenuController.swift; sourceTree = "<group>"; };
+		AA1B20991D2CE20200DA5440 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		AA1B20A21D2D0B6A00DA5440 /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
 		AA1B20A31D2D0B6A00DA5440 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		AA1B20A61D2D24F000DA5440 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };

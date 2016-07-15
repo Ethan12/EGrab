@@ -27,6 +27,7 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
     @IBOutlet var shortcutView: MASShortcutView!
     @IBOutlet weak var authKeyField: NSTextField!
     @IBOutlet weak var uploadTextField: NSTextField!
+    @IBOutlet var postTextField: NSTextField!
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -42,6 +43,9 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
         
         let authK = defaults.stringForKey("authKey") ?? DEFAULT_AUTHKEY
         authKeyField.stringValue = authK
+        
+        let prURL = defaults.stringForKey("prURL") ?? DEFAULT_PRURL
+        postTextField.stringValue = prURL
         
         defaults.registerDefaults([
             MASHardcodedShortcutEnabledKey: true,
@@ -76,6 +80,7 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setValue(authKeyField.stringValue, forKey: "authKey")
         defaults.setValue(uploadTextField.stringValue, forKey: "uploadURL")
+        defaults.setValue(postTextField.stringValue, forKey: "prURL")
         delegate?.preferencesDidUpdate()
     }
 }

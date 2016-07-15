@@ -10,6 +10,7 @@ import Cocoa
 import MASShortcut
 
 let DEFAULT_UPLOADURL = ""
+let DEFAULT_PRURL = ""
 let DEFAULT_AUTHKEY = ""
 
 let MASCustomShortcutKeys = "customShortcut"
@@ -75,11 +76,10 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     func uploadToServer(path:String, name:String){
         
         let defaults = NSUserDefaults.standardUserDefaults()
-        //let uploadURL = defaults.stringForKey("uploadURL") ?? DEFAULT_UPLOADURL
         
         let authK = defaults.stringForKey("authKey") ?? DEFAULT_AUTHKEY
         
-        let uploadURL = "http://i.ethanmcm.me/upload.php"
+        let uploadURL = defaults.stringForKey("uploadURL") ?? DEFAULT_UPLOADURL
         
         let postURL = NSURL(string: uploadURL)
         
@@ -140,7 +140,10 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     {
         let status = json["Status"]!
         
-        let imgURL = "http://i.ethanmcm.me/img/" + (json["File"]! as! String)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let prURL = defaults.stringForKey("prURL") ?? DEFAULT_PRURL
+        
+        let imgURL = prURL + (json["File"]! as! String)
         
         let userName = NSUserName()
         let workingDirectory = "/Users/\(userName)/"

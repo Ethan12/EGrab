@@ -188,7 +188,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
             
         }else{
             
-            notification.informativeText = "Error - please try again"
+            notification.informativeText = "Error - please check preferences"
             notification.soundName = NSUserNotificationDefaultSoundName
             
             nfc.deliverNotification(notification)

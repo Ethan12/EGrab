@@ -147,6 +147,11 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         
         let imgPath = workingDirectory + (json["File"]! as! String)
         
+        let notification = NSUserNotification.init();
+        notification.title = "EGrab"
+        
+        let nfc = NSUserNotificationCenter.defaultUserNotificationCenter()
+        
         if(status as! String == "OK")
         {
             
@@ -155,9 +160,26 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
             let pb = NSPasteboard.generalPasteboard()
             pb.clearContents()
             pb.setString(imgURL, forType: NSStringPboardType)
+            
+            let img = NSImage(contentsOfFile: imgPath)
+            
+            
+            notification.contentImage = img
+            notification.informativeText = imgURL
+            notification.soundName = NSUserNotificationDefaultSoundName
+            
+            nfc.deliverNotification(notification)
+            
+            
             removeImageAtPath(imgPath)
             
         }else{
+            
+            notification.informativeText = "Error - please try again"
+            notification.soundName = NSUserNotificationDefaultSoundName
+            
+            nfc.deliverNotification(notification)
+            
             removeImageAtPath(imgPath)
         }
         

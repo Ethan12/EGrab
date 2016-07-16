@@ -9,10 +9,21 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
 
+    func userNotificationCenter(center: NSUserNotificationCenter, didActivateNotification notification: NSUserNotification) {
+        
+        let url = notification.informativeText
+        
+        let pb = NSPasteboard.generalPasteboard()
+        pb.clearContents()
+        pb.setString(url!, forType: NSStringPboardType)
+        
+        NSUserNotificationCenter.defaultUserNotificationCenter().removeDeliveredNotification(notification)
+    }
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
         // Insert code here to initialize your application
     }
 

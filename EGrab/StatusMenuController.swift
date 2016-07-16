@@ -246,9 +246,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
         
         return body
     }
-    
-    
-    
+
     
     func generateBoundaryString() -> String {
         return "Boundary-\(NSUUID().UUIDString)"
@@ -257,7 +255,6 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
     
     
 }
-
 
 
 extension NSMutableData {
